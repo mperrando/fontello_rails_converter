@@ -101,9 +101,9 @@ module FontelloRailsConverter
       def convert_for_asset_pipeline(content)
         # asset URLs
         content.gsub! /\.\.\/font\//, ""
-        content.gsub!(/url\(([^\(]+)\)/) do |m|
-          $1.include?("application/octet-stream") ? "url(#{$1})" : "font-url(#{$1})"
-        end
+        #content.gsub!(/url\(([^\(]+)\)/) do |m|
+        #  $1.include?("application/octet-stream") ? "url(#{$1})" : "font-url(#{$1})"
+        #end
       end
 
       def convert_for_webpack(content)
