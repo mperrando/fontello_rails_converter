@@ -1,6 +1,9 @@
 require 'fileutils'
 require 'launchy'
 require 'zip'
+require 'rails'
+require 'active_support/dependencies/autoload' if Rails::VERSION::MAJOR >= 7
+require 'active_support/core_ext' if Rails::VERSION::MAJOR >= 7
 
 module FontelloRailsConverter
   class Cli
