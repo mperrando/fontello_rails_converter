@@ -1,3 +1,8 @@
+# 0.4.6
+
+* [feature] added new `--webpack` option to convert stylesheets for use with webpack. #45
+* [bugfix] fixed compatibility with Rails 5 #44
+
 # 0.4.5
 
 * [bugfix] embedded base64 fonts (using `url()`) were not decoded correctly #43
